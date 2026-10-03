@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(134, 167, 168);
+            margin: 0;
+        }
+    .form-container {
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 15px;
+    width: 1000px;
+    margin:  60px auto;
+    
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+}
+.heading{
+    text-align: center;
+}
+.ad{
+    padding:30px;
+    background-color:  whitesmoke;
+    border-radius: 15px;
+    margin-top: 60px;
+     width: 1000px;
+    margin:  60px auto;
+}
+
+.row{
+   grid-template-columns: 1fr 1fr;
+    gap: 0 25px;
+    padding: 10px;  display: grid;
+    
+}
+.ae{
+    background-color: whitesmoke;
+     border-radius: 15px;
+    margin-top: 60px;
+    padding: 30px;
+     width: 1000px;
+    margin:  60px auto;
+}
+.form{
+grid-template-columns: 1fr 1fr;
+    gap: 0 25px;
+    padding: 10px;  display: grid;
+}
+.af{
+      padding:30px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    margin-top: 60px;
+     width: 1000px;
+    margin:  60px auto;
+}
+.emerge{
+    grid-template-columns: 1fr 1fr;
+    gap: 0 25px;
+    padding: 10px;  display: grid;
+}
+.ag{
+      padding:30px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+     width: 1000px;
+    margin: 60px auto;
+}
+.option input{
+    height: 100px;
+}
+.ai input{
+    background-color: #E0E0E0;
+}
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 24px;">Student Registration</h1>
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Fill out the form below to register as a student</p>
+    </div>
+  <div class="ai">
+    
+<div class="form-container">
+    <h2>Personal Information</h2>
+    <p>Please provide your basic information</p>
+
+    <div class="form-grid">
+
+        <div>
+            <label>First Name:</label>
+            <input type="text" placeholder="John">
+        </div>
+
+        <div>
+            <label>Last Name:</label>
+            <input type="text" placeholder="Doe">
+        </div>
+
+        <div>
+            <label>Email:</label>
+            <input type="email" placeholder="someone@gmail.com">
+        </div>
+
+        <div>
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="(123) 456-789">
+        </div>
+
+        <div>
+            <label>Date of Birth:</label>
+            <input type="date">
+        </div>
+
+        <div>
+            <label>Gender:</label>
+            <select>
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="ad">
+        <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Address Information</h2>
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Your current residential address</p>
+
+        <div>
+            <label>Street Address</label>
+            <input type="text" placeholder="123 Main Street">
+        </div>
+         
+        <div class="row">
+
+        <div>
+            <label>City</label>
+            <input type="text" placeholder="New York">
+        </div>
+
+        <div>
+            <label>State/Province</label>
+            <input type="text" placeholder="NY">
+        </div>
+
+        <div>
+            <label>ZIP/Postal Code</label>
+            <input type="number" placeholder="01001">
+        </div>
+        </div>
+        </div>
+        
+
+
+        <div class="ae">
+            <h2  style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Educational Background</h2>
+            <p  style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Information about your education</p>
+
+            <div>
+                <label>Previous School/Institutions</label>
+                <input type="text" placeholder="Nmae of your previous school">
+            </div>
+
+            <div class="form">
+
+                <div>
+                    <label>Grade Level</label>
+                    <select>
+                        <option>Primary</option>
+                        <option>Secondary</option>
+                        <option>Tertiary</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Program of interest</label>
+                    <select>
+                        <option>Sciences</option>
+                        <option>Art</option>
+                        <option>Commerce</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="af">
+            <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Emergency Contact</h2>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Person to contact incase of emergency</p>
+
+            <div>
+                <label>Contact Name</label>
+                <input type="text" placeholder="Jane Doe">
+            </div>
+
+            <div class="emerge">
+                <div>
+                    <label>Relationship</label>
+                    <input type="text" placeholder="Mother,Father,Guardian, etc.">
+                </div>
+
+                <div>
+                    <label>Contact Phone</label>
+                    <input type="tel" placeholder="(123) 456-7890">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ag">
+            <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Additonal Information</h2>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Optional Information that may be helpful</p>
+
+            <div class="option">
+
+            <div>
+            <label>Medical Conditions or Allergies</label>
+            <input type="text" placeholder="Please list any medical conditioons or allergies we should be aware of">
+            </div>
+
+            <div>
+            <label>Additional Notes</label>
+            <input type="text" placeholder="Any other information you'd like to share">
+            </div>
+
+
+            
+            </div>
+        </div>
+
+  </div>
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+        
+
+
+</body>
+</html>
